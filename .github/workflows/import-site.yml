@@ -19,7 +19,7 @@ jobs:
 
       - name: Restore source files
         run: |
-          base64 --decode migration/source-bundle.tar.gz.b64 > /tmp/source-bundle.tar.gz
+          base64 --decode migration/cop31-source-bundle.tar.gz.b64 > /tmp/source-bundle.tar.gz
           tar -xzf /tmp/source-bundle.tar.gz
 
       - name: Download and verify published site
