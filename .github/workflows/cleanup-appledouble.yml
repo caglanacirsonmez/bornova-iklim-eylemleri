@@ -1,0 +1,39 @@
+name: Clean macOS metadata files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/cleanup-appledouble.yml
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Remove AppleDouble metadata
+        run: |
+          rm -f -- \
+            '._README.md' \
+            '.openai/._hosting.json' \
+            'dist/._index.html' \
+            'scripts/._fetch_live_site.py' \
+            'scripts/._import_docx_content.py' \
+            'scripts/._import_gallery.py' \
+            'scripts/._optimize_images.py' \
+            'scripts/._site-files.sha256' \
+            'scripts/._sync_english_content.py'
+          rm -f .github/workflows/cleanup-appledouble.yml
+
+      - name: Commit cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Remove macOS metadata files"
+          git push
