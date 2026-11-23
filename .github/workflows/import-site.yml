@@ -1,0 +1,45 @@
+name: Import current Bornova climate site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/import-site.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Restore source files
+        run: |
+          base64 --decode migration/source-bundle.tar.gz.b64 > /tmp/source-bundle.tar.gz
+          tar -xzf /tmp/source-bundle.tar.gz
+
+      - name: Download and verify published site
+        run: |
+          python3 scripts/fetch_live_site.py \
+            "https://bornova-iklim-eylemleri.caglanacir.chatgpt.site" \
+            scripts/site-files.sha256 \
+            dist
+
+      - name: Commit imported source
+        run: |
+          rm -f scripts/fetch_live_site.py scripts/site-files.sha256
+          rm -rf migration
+          rm -f .github/workflows/import-site.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Published site is already current."
+            exit 0
+          fi
+          git commit -m "Import current Bornova climate site"
+          git push
