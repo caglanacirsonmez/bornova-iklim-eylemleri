@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bornova Lalesi">
+  <rect width="64" height="64" rx="15" fill="#073f68"/>
+  <path d="M32 34v22" fill="none" stroke="#79b85a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 49c-6-7-10-8-14-7 3 7 7 11 14 12Z" fill="#67a94d"/>
+  <path d="M32 47c6-7 10-8 14-7-3 7-7 11-14 12Z" fill="#8bc568"/>
+  <path d="M32 36C22 34 16 25 18 11c7 3 12 9 14 18 2-9 7-15 14-18 2 14-4 23-14 25Z" fill="#e33b54"/>
+  <path d="M32 36C26 31 23 21 26 8c4 4 6 9 6 16 0-7 2-12 6-16 3 13 0 23-6 28Z" fill="#fff"/>
+  <path d="M32 36c-3-8-3-18 0-27 3 9 3 19 0 27Z" fill="#f3a2ae"/>
+</svg>

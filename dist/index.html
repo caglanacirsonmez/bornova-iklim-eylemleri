@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#003e6f">
+    <meta name="description" content="Bornova Belediyesi'nin iklim, enerji, dayanıklılık, sosyal kalkınma ve sıfır atık çalışmalarını keşfedin.">
+    <title>Bornova Belediyesi Yerel İklim Eylemleri</title>
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg?v=2">
+    <link rel="stylesheet" href="styles.css?v=20261106b">
+    <script src="gallery-manifest.js?v=20261106e" defer></script>
+    <script src="content.js?v=20261106d" defer></script>
+    <script src="content-en.js?v=20261106d" defer></script>
+    <script src="app.js?v=20261106b" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <section id="home-view" class="view home-view" aria-labelledby="home-title">
+      <header class="topbar">
+        <div class="brand-lockup" aria-label="Bornova Belediyesi ve COP31 Türkiye">
+          <img class="bornova-logo" src="assets/bornova-logo.png" alt="Bornova Belediyesi">
+          <span class="brand-divider" aria-hidden="true"></span>
+          <img class="cop-logo" src="assets/cop31-logo.png" alt="COP31 Türkiye Antalya">
+        </div>
+        <div class="header-tools">
+          <div class="header-actions">
+            <a class="municipality-link" href="https://bornova.bel.tr/" target="_blank" rel="noopener noreferrer" aria-label="Bornova Belediyesi web sitesini aç">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.3 2.5 3.5 5.5 3.5 9S14.3 18.5 12 21c-2.3-2.5-3.5-5.5-3.5-9S9.7 5.5 12 3Z"/></svg>
+            </a>
+            <button class="language-button" type="button" data-language-toggle aria-label="Switch to English">
+              <span aria-hidden="true">EN</span>
+            </button>
+            <button class="feedback-open-button" type="button" data-feedback-open aria-label="Anonim görüş paylaş">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a3 3 0 0 1-3 3H9l-5 3v-6a3 3 0 0 1-1-2V7a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v8Z"/><path d="M8 9h8M8 13h5"/></svg>
+              <span>Görüşünü paylaş</span>
+            </button>
+            <button class="fullscreen-button" type="button" data-fullscreen aria-label="Tam ekranı aç">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5m13 5h5v-5"/></svg>
+              <span>Tam ekran</span>
+            </button>
+          </div>
+          <section class="report-access">
+            <div class="report-grid">
+              <a id="report-biodiversity-link" class="report-card" href="https://drive.google.com/file/d/1AVAqvOIm2x95dWTG01EZzOh4rGRCCGNM/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Bornova Biyoçeşitlilik Envanteri PDF raporunu aç">
+                <span class="report-qr" aria-hidden="true"><img src="assets/qr-biyocesitlilik.svg" alt=""></span>
+                <span class="report-card-copy">
+                  <strong id="report-biodiversity-title">Bornova Biyoçeşitlilik Envanteri</strong>
+                  <span class="report-card-action" data-report-action>PDF’yi aç</span>
+                </span>
+              </a>
+              <a id="report-secap-link" class="report-card" href="https://drive.google.com/file/d/17GlCP2UQjeIomSN8OQZoIZnaVY2VF-gq/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Bornova SECAP İngilizce PDF raporunu aç">
+                <span class="report-qr" aria-hidden="true"><img src="assets/qr-secap-en.svg" alt=""></span>
+                <span class="report-card-copy">
+                  <strong id="report-secap-title">Bornova SECAP (İngilizce)</strong>
+                  <span class="report-card-action" data-report-action>PDF’yi aç</span>
+                </span>
+              </a>
+              <a id="report-sustainability-link" class="report-card" href="https://drive.google.com/file/d/1eeSQ97ag8CKbzXen7cSelZSvExUx6OD1/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Bornova Sürdürülebilirlik Raporu 2025 İngilizce PDF raporunu aç">
+                <span class="report-qr" aria-hidden="true"><img src="assets/qr-sustainability-report-2025-en.svg" alt=""></span>
+                <span class="report-card-copy">
+                  <strong id="report-sustainability-title">Bornova Sürdürülebilirlik Raporu 2025 (İngilizce)</strong>
+                  <span class="report-card-action" data-report-action>PDF’yi aç</span>
+                </span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <main class="home-main">
+        <div class="home-intro">
+          <div>
+            <p id="home-kicker" class="kicker"><span></span> COP31 · BORNOVA’DAN YEREL AKSİYONLAR</p>
+            <h1 id="home-title">İklim için<br><em>birlikte harekete.</em></h1>
+          </div>
+          <div class="home-side">
+            <p id="intro-copy" class="intro-copy">Toprağı koruyan, temiz enerji üreten, afetlere hazırlanan ve yaşamı güçlendiren Bornova’yı keşfedin.</p>
+          </div>
+        </div>
+
+        <nav id="category-grid" class="category-grid" aria-label="İklim eylemi başlıkları"></nav>
+      </main>
+
+      <footer class="home-footer">
+        <span id="footer-prompt">Bir başlığa dokunarak keşfedin</span>
+        <span class="footer-line" aria-hidden="true"></span>
+        <span id="footer-summary">5 başlık · 52 çalışma</span>
+      </footer>
+    </section>
+
+    <section id="detail-view" class="view detail-view" aria-labelledby="category-title" hidden>
+      <header class="detail-header">
+        <button id="home-button" class="home-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          <span>Ana sayfa</span>
+        </button>
+        <div class="detail-brand" aria-label="Bornova Belediyesi ve COP31 Türkiye">
+          <img src="assets/bornova-logo.png" alt="Bornova Belediyesi">
+          <span aria-hidden="true"></span>
+          <img src="assets/cop31-logo.png" alt="COP31 Türkiye Antalya">
+        </div>
+        <div class="header-actions">
+          <button class="language-button light" type="button" data-language-toggle aria-label="Switch to English">
+            <span aria-hidden="true">EN</span>
+          </button>
+          <button class="feedback-open-button light" type="button" data-feedback-open aria-label="Anonim görüş paylaş">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a3 3 0 0 1-3 3H9l-5 3v-6a3 3 0 0 1-1-2V7a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v8Z"/><path d="M8 9h8M8 13h5"/></svg>
+            <span>Görüşünü paylaş</span>
+          </button>
+          <button class="fullscreen-button light" type="button" data-fullscreen aria-label="Tam ekranı aç">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5m13 5h5v-5"/></svg>
+            <span>Tam ekran</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="detail-main">
+        <aside class="topic-panel">
+          <div class="category-heading">
+            <span id="category-number" class="category-number">01</span>
+            <div>
+              <p id="category-heading-label">İKLİM EYLEM ALANI</p>
+              <h2 id="category-title"></h2>
+            </div>
+          </div>
+          <nav id="topic-list" class="topic-list" aria-label="Alt başlıklar"></nav>
+        </aside>
+
+        <article class="story-panel" aria-live="polite">
+          <div id="story-visual" class="story-visual">
+            <div id="story-gallery" class="story-gallery" role="region" aria-label="Konu fotoğrafları">
+              <div id="gallery-track" class="gallery-track" tabindex="0"></div>
+            </div>
+            <div id="image-placeholder" class="image-placeholder" hidden>
+              <svg viewBox="0 0 96 96" aria-hidden="true"><rect x="17" y="20" width="62" height="56" rx="8"/><circle cx="62" cy="37" r="7"/><path d="m23 67 18-19 13 13 8-8 11 14"/></svg>
+              <span id="image-placeholder-label">Fotoğraf yakında</span>
+            </div>
+            <button id="gallery-previous" class="gallery-arrow gallery-arrow-previous" type="button" aria-label="Önceki fotoğraf">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button id="gallery-next" class="gallery-arrow gallery-arrow-next" type="button" aria-label="Sonraki fotoğraf">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <span id="gallery-counter" class="gallery-counter" aria-live="polite"></span>
+            <div class="visual-shade"></div>
+            <div class="visual-caption">
+              <span id="story-index">01 / 06</span>
+              <h1 id="story-title"></h1>
+            </div>
+          </div>
+
+          <div class="story-content">
+            <section class="story-copy" aria-labelledby="story-title">
+              <p id="story-lead" class="story-lead"></p>
+              <div id="story-text" class="story-text"></div>
+              <a id="story-link" class="story-link" href="#" target="_blank" rel="noopener noreferrer" hidden>
+                <span id="story-link-label"></span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </section>
+            <section id="metric-grid" class="metric-grid" aria-label="Öne çıkan sayılar"></section>
+          </div>
+
+        </article>
+      </main>
+    </section>
+
+    <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-dialog-title">
+      <div class="photo-dialog-toolbar">
+        <div>
+          <p id="photo-dialog-kicker">FOTOĞRAF GALERİSİ</p>
+          <h2 id="photo-dialog-title"></h2>
+        </div>
+        <span id="photo-dialog-counter"></span>
+        <button id="photo-dialog-close" type="button" aria-label="Büyük fotoğrafı kapat">×</button>
+      </div>
+      <div class="photo-dialog-stage">
+        <img id="photo-dialog-backdrop" class="photo-dialog-backdrop" alt="" aria-hidden="true">
+        <button id="photo-dialog-image-button" class="photo-dialog-image-button" type="button" aria-label="Fotoğrafı küçült">
+          <img id="photo-dialog-image" alt="">
+        </button>
+        <button id="photo-dialog-previous" class="photo-dialog-arrow previous" type="button" aria-label="Önceki büyük fotoğraf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button id="photo-dialog-next" class="photo-dialog-arrow next" type="button" aria-label="Sonraki büyük fotoğraf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+      <p id="photo-dialog-hint" class="photo-dialog-hint">Küçültmek için fotoğrafa yeniden dokunun.</p>
+    </dialog>
+
+    <dialog id="feedback-dialog" class="feedback-dialog" aria-labelledby="feedback-title">
+      <form id="feedback-form" class="feedback-card" novalidate>
+        <button id="feedback-close" class="feedback-close" type="button" aria-label="Geri bildirim penceresini kapat">×</button>
+
+        <div id="feedback-entry" class="feedback-entry">
+          <p id="feedback-kicker" class="feedback-kicker">ANONİM GERİ BİLDİRİM</p>
+          <h2 id="feedback-title">Görüşünüz bizim için değerli</h2>
+          <p id="feedback-description" class="feedback-description">Bornova’nın iklim eylemleriyle ilgili görüş ve önerilerinizi anonim olarak paylaşabilirsiniz.</p>
+          <p id="feedback-privacy" class="feedback-privacy">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 6v5c0 5-3.3 8.6-8 11-4.7-2.4-8-6-8-11V6l8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Ad, telefon veya e-posta bilgisi istemiyoruz.</span>
+          </p>
+
+          <label id="feedback-label" for="feedback-message">Görüş ve öneriniz</label>
+          <textarea id="feedback-message" name="message" minlength="3" maxlength="1000" rows="6" autocomplete="off" autocapitalize="sentences" spellcheck="true" enterkeyhint="send" placeholder="Görüşünüzü buraya yazın…"></textarea>
+          <div class="feedback-meta">
+            <span id="feedback-status" role="status" aria-live="polite"></span>
+            <span id="feedback-counter">0 / 1000</span>
+          </div>
+
+          <div class="feedback-actions">
+            <button id="feedback-cancel" class="feedback-secondary" type="button">Vazgeç</button>
+            <button id="feedback-submit" class="feedback-primary" type="submit">Anonim gönder</button>
+          </div>
+        </div>
+
+        <div id="feedback-success" class="feedback-success" hidden>
+          <span class="feedback-success-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg>
+          </span>
+          <p id="feedback-success-kicker" class="feedback-kicker">TEŞEKKÜR EDERİZ</p>
+          <h2 id="feedback-success-title">Görüşünüz kaydedildi</h2>
+          <p id="feedback-success-text">Katkınız, Bornova’nın iklim çalışmalarını geliştirmemize yardımcı olacak.</p>
+          <button id="feedback-success-close" class="feedback-primary" type="button">Kapat</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
